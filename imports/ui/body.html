@@ -1,0 +1,61 @@
+<body>         
+</body>
+
+<template name="header">
+    <header>
+        <h1>Persons</h1>
+        <nav>
+            <a href="/">View Persons</a> |
+            <a href="/editPerson">Edit Person</a> |
+            <a href="/addPerson">Add Person</a>
+        </nav>
+    </header>  
+</template> 
+
+<template name="layout">
+    <div class="container">
+            {{>header}}
+            <div class="header-row">
+            <span class="name-header">Name</span>
+            <span class="age-header">Age</span>
+            <span class="active-header">Is active</span>
+            </div>
+            {{>yield}}
+    </div>
+</template>
+
+<template name="persons">
+
+ 
+    <ul>
+        {{#each persons}}
+        {{> person}}
+        {{/each}}
+    </ul>
+
+        
+           
+
+</template> 
+
+
+<template name="editPerson">
+
+    <ul>
+        {{#each persons}}
+        {{> person}}
+        {{/each}}
+    </ul>
+
+</template>
+
+<template name="addPerson">
+
+    <form class="new-person">
+        <input class="name-value" type="text" value="{{name}}" />
+        <input class="age-value" type="text" value="{{age}}" />
+        <input class="active-value" type="checkbox" checked="{{isActive}}" />
+        <input type="submit" value="Add person">
+    </form>
+    
+</template>

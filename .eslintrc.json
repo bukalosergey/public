@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-redeclare": "warn",
+        "comma-dangle": "warn",
+        "no-const-assign": "warn",
+        "no-this-before-super": "warn",
+        "no-undef": "warn",
+        "no-unreachable": "warn",
+        "no-unused-vars": "warn",
+        "constructor-super": "warn",
+        "valid-typeof": "warn",
+        "no-irregular-whitespace": "warn",
+        "no-compare-neg-zero": "warn",
+        "no-dupe-keys": "warn",
+        "no-extra-semi": "warn",
+        "eqeqeq": "warn"
+    },
+    "globals": {
+        "Terrasoft": false,
+        "define": false,
+        "Ext": false,
+        "Router": false
+    }
+}
+

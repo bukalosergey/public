@@ -1,0 +1,16 @@
+<template name="person">
+    <li>
+        {{#if isEdit}}
+        <input class="name-value" type="text" value="{{name}}" />
+        <input class="age-value" type="text" value="{{age}}" />
+        <input class="active-value" type="checkbox" checked="{{isActive}}" />
+        <button class="delete">&times;</button>
+        <button class="update">update</button>
+        {{else}}
+        <span class="name-value text">{{name}}</span>
+        <span class="age-value text">{{age}}</span>
+        <input type="checkbox" checked="{{isActive}}" disabled  />
+        {{/if}}
+    
+    </li>
+</template>
